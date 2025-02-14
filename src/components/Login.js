@@ -34,7 +34,7 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 function Login() {
-    const [email, setEmail] = useState();
+    const [email_company, setEmail] = useState();
     const [password, setPassword] = useState();
     const [error, setError] = useState('');
     // const [isLoggedIn, setIsLoggedIn] = useAuth();
@@ -44,7 +44,7 @@ function Login() {
         e.preventDefault();
         //Login
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/login', { email, password });
+            const response = await axios.post('http://127.0.0.1:8000/api/login', { email_company, password });
             if (response.status === 200) {
                 // Save the token in localStorage or context
                 let token = response.data.access_token;

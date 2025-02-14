@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box, Typography, Avatar, Container, Grid, Card } from '@mui/material';
+import { Box, Typography, Avatar, Container, Grid } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { Stack, ListItem, Scrollbar } from '@mui/material';
 // import { useAuth } from './Custom/AuthProvider';
